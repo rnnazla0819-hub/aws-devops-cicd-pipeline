@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CI/CD Demo | Nazla</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, Helvetica, sans-serif; background: #f6f3f7; color: #1f2937; line-height: 1.6; }
+    header { background: #8b1d45; color: #fff; padding: 56px 20px; text-align: center; }
+    header p { opacity: .9; margin-top: 8px; }
+    .badge { display: inline-block; margin-top: 16px; background: #fff; color: #8b1d45; padding: 6px 14px; border-radius: 999px; font-weight: bold; font-size: .85rem; }
+    main { max-width: 760px; margin: 0 auto; padding: 24px 20px; }
+    section { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+    h2 { color: #8b1d45; margin-bottom: 12px; font-size: 1.15rem; }
+    ol { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    footer { text-align: center; padding: 20px; color: #6b7280; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Deployed by a CI/CD pipeline</h1>
+    <p>Raheem Noorul Nazla &middot; AWS Cloud &amp; DevOps Intern, Codomax Digital Solutions</p>
+    <span class="badge">Version 1</span>
+  </header>
+
+  <main>
+    <section>
+      <h2>How this page got here</h2>
+      <ol>
+        <li>I pushed a change to the <strong>main</strong> branch on GitHub.</li>
+        <li>GitHub Actions started the deployment workflow automatically.</li>
+        <li>The workflow checked the files and synced them to an Amazon S3 bucket.</li>
+        <li>S3 static website hosting now serves this page.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Tools used</h2>
+      <p>Git &middot; GitHub &middot; GitHub Actions &middot; Amazon S3 &middot; AWS IAM</p>
+    </section>
+  </main>
+
+  <footer>Module 06 &middot; AWS DevOps &amp; CI/CD</footer>
+</body>
+</html>
